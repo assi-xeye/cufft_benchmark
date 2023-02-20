@@ -17,8 +17,7 @@ For Nvidia Quadro P6000 , this takes 6.7 ms.
 
 # Next step
 - Will be tested on latest GPU for reference
-- Nvidia recently released mathdx which includes cuFFTdx, which is a C++ interface to creake FFT kernels directly. This shows [improvement](fo   
-  (https://docs.nvidia.com/cuda/cufftdx/examples.html) mostly for small FFT size. Can be considered in the future
+- Nvidia recently released mathdx which includes cuFFTdx, which is a C++ interface to creake FFT kernels directly. This shows [improvement](https://docs.nvidia.com/cuda/cufftdx/examples.html) mostly for small FFT size. Can be considered in the future
 - TODO: Test on latest GPU
 - TODO: Discuss using Powers of 2 to avoid padding. 
 
