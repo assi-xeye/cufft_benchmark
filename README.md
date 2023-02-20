@@ -1,6 +1,6 @@
 # Scope
 Minimal benchmark for cuFFT 
-Based on [Nvidia cuFFT 1D R2C exmaple](https://github.com/NVIDIA/CUDALibrarySamples/tree/master/cuFFT/1d_r2c)
+Based on [Nvidia cuFFT 1D R2C example](https://github.com/NVIDIA/CUDALibrarySamples/tree/master/cuFFT/1d_r2c)
 The source example does not support multiple batches beyond 8. Changed the code to use ```cufftPlanMany``` based on rececommendations in answer [here](https://stackoverflow.com/questions/25603394/1d-batched-ffts-of-real-arrays%5B/url%5D)
 
 # Benchmark parameters
@@ -17,7 +17,7 @@ For Nvidia Quadro P6000 , this takes 6.7 ms.
 
 # Next step
 - Will be tested on latest GPU for reference
-- Nvidia recently released mathdx which includes cuFFTdx, which is a C++ interface to creake FFT kernels directly. This shows [improvement](https://docs.nvidia.com/cuda/cufftdx/examples.html) mostly for small FFT size. Can be considered in the future
+- Nvidia recently released mathdx which includes cuFFTdx, which is a C++ interface to create FFT kernels directly in C++ style, also enables calling from inside a kernel. This shows [improvement](https://docs.nvidia.com/cuda/cufftdx/examples.html) mostly for small FFT size. Can be considered in the future
 - TODO: Test on latest GPU
 - TODO: Discuss using Powers of 2 to avoid padding. 
 
